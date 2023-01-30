@@ -1,0 +1,2 @@
+When you looked at your commit history on either GitHub or GitHub Desktop for the Jupyter Notebook, did the code look familiar? What about the code for the python script you made? Why did the code for Jupyter Notebook seem foreign?
+** The code for the Jupiter notebook did not look familiar. The code for the python script was familiar. That is because the Jupyter notebooks are simple JSON files, and they are therefore written in that language. What we see on the Jupyter notebook is an interface, it's not the source code. On github desktop, we see the source code. 
