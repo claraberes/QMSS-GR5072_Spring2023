@@ -408,6 +408,9 @@ df["breed"].value_counts(sort=True)
 # Check proportion table, placing largest groups at top
 df["breed"].value_counts(normalize=True)
 
+# Create a crosstab
+pd.crosstab(index=df['row'],, columns='col')
+
 # Make a pivot table of var with rows and cols passed as list
 pt = df.pivot_table("var", index=["country", "city"], columns="year")
 
