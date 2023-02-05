@@ -218,7 +218,7 @@ array.astype(np.int32)
 np.arange(1,13)
 
 # Sort data
-np.sort(array)
+array.np.sort(array)
 
 # Flattens array to be 1-D only
 array.flatten()
