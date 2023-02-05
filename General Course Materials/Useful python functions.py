@@ -218,7 +218,7 @@ array.astype(np.int32)
 np.arange(1,13)
 
 # Sort data
-np.sort(array)
+array.np.sort(array)
 
 # Flattens array to be 1-D only
 array.flatten()
@@ -368,6 +368,9 @@ df.sort_values(["col_name", "col_name2"], ascending = [True, False])
 # Add new column
 df["new_col"] = x * y
 
+# Create dummy (1/0) variable
+df["high_school_grad"] = (df["F3EVERDO"] == 0).astype(int)
+
 # Slice DF based on logical conditions
 df[df["col_name"] > 50]
 
@@ -409,7 +412,7 @@ df["breed"].value_counts(sort=True)
 df["breed"].value_counts(normalize=True)
 
 # Create a crosstab
-pd.crosstab(index=df['row'],, columns='col')
+pd.crosstab(index=df['row'], columns=df['col'])
 
 # Make a pivot table of var with rows and cols passed as list
 pt = df.pivot_table("var", index=["country", "city"], columns="year")
